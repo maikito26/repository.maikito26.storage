@@ -1,2 +1,6 @@
+0.0.2 (Aug 25 2015)
+- Updated script.foscam with 0.0.2
+- Updated repository.maikito26 with 0.0.2
+
 0.0.1 (Aug 25 2015)
-First Commit
+- First Commit

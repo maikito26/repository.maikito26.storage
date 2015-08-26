@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.maikito26" name="Maikito26 Add-ons" version="0.0.1" provider-name="maikito26">
+<addon id="repository.maikito26" name="Maikito26 Add-ons" version="0.0.2" provider-name="Maikito26">
     <extension point="xbmc.addon.repository" name="Maikito26 Add-ons">
 		<info compressed="true">https://github.com/maikito26/repository.maikito26.storage/raw/master/addons.xml</info>
 		<checksum>https://github.com/maikito26/repository.maikito26.storage/raw/master/addons.xml.md5</checksum>
@@ -15,8 +15,8 @@
 
 <addon id="script.foscam"
        name="Foscam HD"
-       version="0.0.1"
-       provider-name="maikito26">
+       version="0.0.2"
+       provider-name="Maikito26">
   <requires>
     <import addon="xbmc.python" version="2.13.0"/>
     <import addon="script.module.requests" version="2.3.0" optional="false"/>
@@ -25,8 +25,8 @@
   <extension point="xbmc.service" library="service.py" start="startup"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Foscam HD camera video with camera control</summary>
-    <description lang="en">This script shows the video feed from a Foscam HD camera (e.g. the FI9821W), with controls for pan/tilt, and mirror/flip. A video preview (no audio) can be triggered by motion or sound detection. Press select when the preview appears to open the video feed with camera controls.</description>
+    <summary lang="en">View a Foscam HD camera live stream with camera controls</summary>
+    <description lang="en">This script shows the video feed from a Foscam HD camera.  This has been confirmed to work with Foscam F19831w and F19804p models as this is what I own, using the latest firmware available at this time - 2.11.1.118. Ther are controls for pan/tilt, and mirror/flip. A video preview (no audio) can be triggered by motion or sound detection. Press select when the preview appears to open the video feed with camera controls.</description>
     <disclaimer>This add-on is not affiliated with Foscam. This add-on will modify some settings on the camera itself such as motion and sound detection settings.</disclaimer>
     <forum>http://forum.xbmc.org/showthread.php?tid=190439</forum>
     <website>http://foscam.us/megapixel-ip-cameras-2/</website>

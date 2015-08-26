@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.maikito26" name="Maikito26 Add-ons" version="0.0.1" provider-name="maikito26">
+<addon id="repository.maikito26" name="Maikito26 Add-ons" version="0.0.2" provider-name="Maikito26">
     <extension point="xbmc.addon.repository" name="Maikito26 Add-ons">
 		<info compressed="true">https://github.com/maikito26/repository.maikito26.storage/raw/master/addons.xml</info>
 		<checksum>https://github.com/maikito26/repository.maikito26.storage/raw/master/addons.xml.md5</checksum>
