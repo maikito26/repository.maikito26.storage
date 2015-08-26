@@ -15,7 +15,7 @@
 
 <addon id="script.foscam"
        name="Foscam HD"
-       version="0.0.2"
+       version="0.0.3"
        provider-name="Maikito26">
   <requires>
     <import addon="xbmc.python" version="2.13.0"/>
