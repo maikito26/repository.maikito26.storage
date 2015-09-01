@@ -1,0 +1,10 @@
+0.0.1 (Sep 1 2015)
+ - Initial Release
+ - Test on F19804p and F19831w using Firmware 2.11.1.118
+
+Known Issues List/Future Feature Dev List:
+- Does not update automatically when settings change.  The preview requires a Kodi restart
+- Ability to choose the same preview location and it is unpredictable how it looks if multiple alarms are detected and cameras are showing
+- Previews will display while running the main window
+- No ability to select single camera and use controls
+

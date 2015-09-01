@@ -1,0 +1,6 @@
+0.0.2 (2015-08-26)
+- Updating user experience
+- New icon
+
+0.0.1 (2015-08-25)
+- First Commit
