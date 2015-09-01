@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.foscam4hd - Copy"
+       name="Foscam 4HD"
+       version="0.0.1"
+       provider-name="Maikito26">
+  <requires>
+    <import addon="xbmc.python" version="2.13.0"/>
+    <import addon="script.module.requests" version="2.3.0" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">View a Foscam HD camera live stream and monitor motion and sound alarms</summary>
+    <description lang="en">This script shows the video feed from up to 4 Foscam HD cameras simultaneously.</description>
+    <disclaimer>This add-on is not affiliated with Foscam. This add-on will modify some settings on the camera itself such as motion and sound detection settings.</disclaimer>
+    <forum>http://forum.xbmc.org/showthread.php?tid=190439</forum>
+    <website>http://foscam.us/megapixel-ip-cameras-2/</website>
+    <source>https://github.com/maikito26/script.foscam4hd.git</source>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+  </extension>
+</addon>
