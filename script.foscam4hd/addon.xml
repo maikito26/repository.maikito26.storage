@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="script.foscam4hd"
        name="Foscam 4HD"
-       version="0.0.1"
+       version="0.0.2"
        provider-name="Maikito26">
   <requires>
     <import addon="xbmc.python" version="2.13.0"/>
