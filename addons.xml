@@ -7,7 +7,7 @@
   </requires>
   <extension point="xbmc.python.library" library="script.py"/>
   <extension point="xbmc.python.pluginsource" library="navigation.py">
-    <provides>video executable</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
@@ -17,7 +17,7 @@
     <disclaimer>This add-on is not affiliated with Foscam. This add-on will modify some settings on the camera itself such as motion and sound detection settings.</disclaimer>
     <forum>http://forum.kodi.tv/showthread.php?tid=240768</forum>
     <website>https://github.com/maikito26</website>
-    <source>https://github.com/maikito26/script.foscam4kodi.git</source>
+    <source>https://github.com/maikito26/plugin.video.surveillanceroom.git</source>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
