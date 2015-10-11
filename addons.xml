@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.surveillanceroom"
-       name="Surveillance Room"
-       version="0.2.0"
-       provider-name="Maikito26">
+<addon id="plugin.video.surveillanceroom" name="Surveillance Room" version="0.2.0" provider-name="Maikito26">
   <requires>
-    <import addon="xbmc.python" version="2.19.0" />
-    <import addon="script.module.requests" version="2.3.0" optional="false" />
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.requests" version="2.3.0" optional="false"/>
   </requires>
-  <extension point="xbmc.python.library" library="script.py" />
+  <extension point="xbmc.python.library" library="script.py"/>
   <extension point="xbmc.python.pluginsource" library="navigation.py">
     <provides>video executable</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary>Surveillance Room is a full featured IP Camera viewer.  Originally designed for Foscam HD IP cameras, this addon can live stream and monitor motion and sound alarms for up to 4 IP Cameras</summary>
-    <description>This script shows the video feed from up to 4 IP Cameras simultaneously, or individaully.  It can detect motion or sound for Foscam HD cameras at the same time, or be called to show a preview by a button or a script.</description>
+    <summary>Surveillance Room is a full featured IP Camera viewer for up to 4 IP Cameras.  Works best with Foscam HD</summary>
+    <description>Originally designed for Foscam HD IP cameras, this addon can live stream and monitor motion and sound alarms for up to 4 IP Cameras.  This script shows the video feed from up to 4 IP Cameras simultaneously, or individaully.  It can detect motion or sound for Foscam HD cameras at the same time, or be called to show a preview by a button or a script.</description>
     <disclaimer>This add-on is not affiliated with Foscam. This add-on will modify some settings on the camera itself such as motion and sound detection settings.</disclaimer>
     <forum>http://forum.kodi.tv/showthread.php?tid=240768</forum>
-    <website>http://foscam.us/megapixel-ip-cameras-2/</website>
+    <website>https://github.com/maikito26</website>
     <source>https://github.com/maikito26/script.foscam4kodi.git</source>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
@@ -36,28 +33,6 @@
 		<description>Repository of add-ons by Maikito26. Some add-ons are final and perhaps obtainable by the official repository of KODI. Add-ons in alpha and beta status are here to test exclusively and for testers to provide them with updates.</description>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="script.foscam"
-       name="Foscam HD"
-       version="0.0.4"
-       provider-name="Maikito26">
-  <requires>
-    <import addon="xbmc.python" version="2.13.0"/>
-    <import addon="script.module.requests" version="2.3.0" optional="false"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py"/>
-  <extension point="xbmc.service" library="service.py" start="startup"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">View a Foscam HD camera live stream with camera controls</summary>
-    <description lang="en">This script shows the video feed from a Foscam HD camera.  This has been confirmed to work with Foscam F19831w and F19804p models as this is what I own, using the latest firmware available at this time - 2.11.1.118. Ther are controls for pan/tilt, and mirror/flip. A video preview (no audio) can be triggered by motion or sound detection. Press select when the preview appears to open the video feed with camera controls.</description>
-    <disclaimer>This add-on is not affiliated with Foscam. This add-on will modify some settings on the camera itself such as motion and sound detection settings.</disclaimer>
-    <forum>http://forum.xbmc.org/showthread.php?tid=190439</forum>
-    <website>http://foscam.us/megapixel-ip-cameras-2/</website>
-    <source>https://github.com/maikito26/script.foscam.git</source>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-  </extension>
 </addon>
 
 <addon id="script.foscam4hd"
