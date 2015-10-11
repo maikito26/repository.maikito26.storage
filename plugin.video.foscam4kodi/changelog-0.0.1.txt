@@ -1,3 +1,0 @@
-0.0.1 (Sep 1 2015)
- - Initial Alpha Test Release
- - Tested on F19804p and F19831w using Firmware 2.11.1.118
