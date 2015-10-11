@@ -4,11 +4,11 @@
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.requests" version="2.3.0" optional="false"/>
   </requires>
-  <extension point="xbmc.python.library" library="script.py"/>
   <extension point="xbmc.python.pluginsource" library="navigation.py">
-    <provides>executable</provides>
+    <provides>executable video</provides>
   </extension>
   <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.python.library" library="script.py"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary>Surveillance Room is a full featured IP Camera viewer for up to 4 IP Cameras.  Works best with Foscam HD</summary>
