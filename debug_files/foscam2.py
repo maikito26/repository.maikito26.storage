@@ -6,7 +6,7 @@ A Kodi add-on by Maikito26
 This module is to exploit Foscam HD Cameras, ie FI9821W/P/HD816W/P.
 """
 
-import urllib
+import urllib, sys
 import xml.etree.ElementTree as ET
 from threading import Thread
 import utils
@@ -94,28 +94,32 @@ class FoscamCamera(object):
         # Parse parameters from response string.
         if self.verbose:
             utils.log(4, 'Send Foscam command: %s' % cmdurl)
-        print str(cmdurl)
         try:
             raw_string = ''
             raw_string = urllib.urlopen(cmdurl).read()
-            print 'NEW DEBUG: raw_string: %s' %raw_string
             root = ET.fromstring(raw_string)
-            print 'NEW DEBUG: root: %s' %root
         except:
             if self.verbose:
                 utils.log(3, 'Foscam exception: ' + raw_string)
-            print 'NEW DEBUG: ERROR - raw_string: %s' %raw_string
             return ERROR_FOSCAM_UNAVAILABLE, None
         code = ERROR_FOSCAM_UNKNOWN
-        print 'NEW DEBUG: code: %s' %code
         params = dict()
-        print 'NEW DEBUG: params: %s' %params
-        for child in root.iter():
-            if child.tag == 'result':
-                code = int(child.text)
+        
+        if utils._atleast_python27:      #Check added for compatibility with Mac/python2.6 kodi builds
+            for child in root.iter():
+                if child.tag == 'result':
+                    code = int(child.text)
 
-            elif child.tag != 'CGI_Result':
-                params[child.tag] = child.text
+                elif child.tag != 'CGI_Result':
+                    params[child.tag] = child.text
+
+        else:
+            for child in root.getiterator():
+                if child.tag == 'result':
+                    code = int(child.text)
+
+                elif child.tag != 'CGI_Result':
+                    params[child.tag] = child.text
 
         if self.verbose:
             utils.log(4, 'Received Foscam response: %s, %s' % (code, params))
