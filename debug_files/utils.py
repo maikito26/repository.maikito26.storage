@@ -172,7 +172,7 @@ def get_mjpeg_frame(stream, filename):
     line  = ''
     try:
         while not 'length' in line.lower():
-            #log(4, 'GETMJPEGFRAME: %s' %line)
+            log(4, 'GETMJPEGFRAME: %s' %line)
             line = stream.readline()
 
         bytes = int(line.split(':')[-1])
@@ -185,8 +185,9 @@ def get_mjpeg_frame(stream, filename):
     except requests.RequestException as e:
         log(3, str(e))
         return False
-
+    
     if frame:
+        log(4, 'Saving Frame: %s' %filename)
         with open(filename, 'wb') as jpeg_file:
             jpeg_file.write(frame)
 
