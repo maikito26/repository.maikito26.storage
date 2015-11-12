@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="context.surveillanceroom.togglepreview" name="Surveillance Room - Toggle Preview Context Menu Item" version="1.0.0" provider-name="Maikito26">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+  </requires>
+  <extension point="kodi.context.item" library="default.py">
+  <item>
+    <label>Toggle Camera Previews On/Off</label>
+    <visible>System.HasAddon(plugin.video.surveillanceroom)</visible>    
+  </item>
+</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>A context menu item that works with Surveillance Room - a full featured IP Camera viewer for up to 4 IP Cameras.</summary>
+    <description>Easily disable/enable previews from showing from the context menu as required.</description>
+    <disclaimer>This add-on is not affiliated with Foscam. This add-on will modify some settings on the camera itself such as motion and sound detection settings.</disclaimer>
+    <forum>http://forum.kodi.tv/showthread.php?tid=240768</forum>
+    <website>https://github.com/maikito26</website>
+    <source>https://github.com/maikito26/context.surveillanceroom.togglepreview.git</source>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
